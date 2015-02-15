@@ -15,3 +15,10 @@ end
 get '/contact' do
   erb :contact
 end
+
+post '/contact' do
+  unless params['name'] == '' || params['email'] == '' || params['content'] == ''
+    save_message(params['name'], params['email'], params['content'])
+  end
+  redirect '/'
+end
