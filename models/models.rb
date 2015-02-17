@@ -23,7 +23,7 @@ end
 # def email_message(name, email, content)
 #   Pony.options = {
 #     :subject => "Portfolio page: Message delivery from #{params[:name]}",
-#     :body => "#{params[:content]}",
+#     :body => "From: #{params[:name]} #{params[:email]}\n#{params[:content]}",
 #     :via => :smtp,
 #     :via_options => {
 #       :address              => 'smtp.1and1.com',
@@ -41,7 +41,7 @@ end
 def email_message(name, email, content)
   Pony.options = {
     :subject => "Portfolio page: Message delivery from #{params[:name]}",
-    :body => "#{params[:content]}",
+    :body => "From: #{params[:name]} #{params[:email]}\n#{params[:content]}",
     :via => :smtp,
     :via_options => {
       :address              => 'smtp.gmail.com',
