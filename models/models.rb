@@ -1,5 +1,3 @@
-Dotenv.load
-
 def db_connection
   begin
     connection = PG.connect(dbname: 'portfolio_app')
@@ -19,6 +17,7 @@ def save_message(name, email, content)
 end
 
 def email_message(name, email, content)
+  Dotenv.load
   Pony.options = {
     :subject => "Portfolio page: Message delivery from #{params[:name]}",
     :body => "From: #{params[:name]} #{params[:email]}\n#{params[:content]}",
