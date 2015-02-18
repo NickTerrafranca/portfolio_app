@@ -1,6 +1,9 @@
 require 'pg'
 require 'pony'
 require 'pry'
+require 'dotenv'
+
+Dotenv.load
 
 def db_connection
   begin
@@ -26,14 +29,14 @@ def email_message(name, email, content)
     :body => "From: #{params[:name]} #{params[:email]}\n#{params[:content]}",
     :via => :smtp,
     :via_options => {
-      :address              => 'smtp.gmail.com',
-      :port                 =>  '587', #'465',
+      :address              => ENV["SMTP_ADDRESS"],
+      :port                 =>  '587',
       :enable_starttls_auto => true,
-      :user_name            => 'nterrafranca@gmail.com', #ENV["USER_EMAIL_ADDRESS"]
-      :password             => "Mr_Milo-0026-Gross", #ENV["SMTP_PASSWORD"],
-      :authentication       => :login, # :plain, :login, :cram_md5, no auth by default
-      :domain               => 'gmail.com'
+      :user_name            => ENV["USER_EMAIL_ADDRESS"],
+      :password             => ENV["SMTP_PASSWORD"],
+      :authentication       => :login,
+      :domain               => ENV["DOMAIN"]
     }
   }
-  Pony.mail(:to => 'nterrafranca@icloud.com')# ENV["DESTINATION_EMAIL_ADDRESS"]
+  Pony.mail(:to => ENV["DESTINATION_EMAIL_ADDRESS"])
 end
