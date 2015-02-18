@@ -1,8 +1,3 @@
-require 'pg'
-require 'pony'
-require 'pry'
-require 'dotenv'
-
 Dotenv.load
 
 def db_connection

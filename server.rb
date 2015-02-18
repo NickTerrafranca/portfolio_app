@@ -1,4 +1,7 @@
 require 'sinatra'
+require 'pg'
+require 'pony'
+require 'dotenv'
 require 'pry'
 require_relative 'models/models'
 
