@@ -1,2 +1,5 @@
 # Ignore environment variables
 /.env
+
+# Ignore user stories
+app_features.txt
