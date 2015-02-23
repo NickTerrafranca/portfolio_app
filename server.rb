@@ -2,15 +2,17 @@ require 'sinatra'
 require 'pg'
 require 'pony'
 require 'dotenv'
+
 require 'pry'
+
 require_relative 'models/models'
 
 get '/' do
   erb :index
 end
 
-get '/about' do
-  erb :about
+get '/tools' do
+  erb :tools
 end
 
 
