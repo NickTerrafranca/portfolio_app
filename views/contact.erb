@@ -1,20 +1,25 @@
-<div class="form_container">
+<div class="banner">
+  <div class="text-area">
+    <h1>Contact Me</h1>
+    <p id="tag-line">Want to connect? Talk about a new Project? Find a bug or compatibility issue?<br>Good or bad I want to hear about it!</p>
+  </div>
+</div>
+
+
+<div class="form_container text-area main-body">
   <form action="/thankyou" method="post">
     <h3>Send me a message</h3>
 
     <div>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" />
+      <input type="text" id="name" name="name" placeholder="Name"/>
     </div>
 
     <div>
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" />
+      <input type="email" id="email" name="email" placeholder="Email Address"/>
     </div>
 
     <div>
-      <label for="content">Message:</label>
-      <textarea rows="5" cols="20" type="text" id="content" name="content" ></textarea>
+      <textarea rows="5" cols="20" type="text" id="content" name="content" placeholder="Message"></textarea>
     </div>
 
     <div class="button">
@@ -23,3 +28,4 @@
 
   </form>
 </div>
+
