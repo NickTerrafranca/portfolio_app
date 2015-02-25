@@ -24,6 +24,8 @@ post '/thankyou' do
   unless params[:name] == '' || params[:email] == '' || params[:content] == ''
     email_message(params[:name], params[:email], params[:content])
     save_message(params[:name], params[:email], params[:content])
+  else
+    render '/thankyou'
   end
   redirect '/'
 end

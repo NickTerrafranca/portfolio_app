@@ -84,6 +84,7 @@ form {
   padding: 1em;
   border: 3px solid #8A8A8A;
   border-radius: 1em;
+  box-shadow: 5px 5px 5px #E6E6E6;
 }
 
 form div + div {
@@ -111,7 +112,7 @@ input:focus, textarea:focus {
 
 textarea {
   vertical-align: top;
-  height: 5em;
+  height: 10em;
   resize: vertical;
 }
 
