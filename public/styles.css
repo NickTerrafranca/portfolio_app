@@ -80,7 +80,8 @@ a:active {
 }
 
 .error {
-  background-color: red;
+  background-color: #FF0D46;
+  border-radius: 11px;
 }
 form {
   margin: 0 auto;
