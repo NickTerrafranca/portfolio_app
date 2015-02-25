@@ -7,7 +7,6 @@
 
 
 <div class="form_container text-area main-body">
-
   <form action="/contact" method="post">
     <h3>Send me a message</h3>
 
@@ -24,7 +23,7 @@
     </div>
 
     <% if params['error'] %>
-      <div class="error form_container "><%= params['error']%></div>
+      <div class="error"><%= params['error']%></div>
     <% end %>
 
     <div class="button">
