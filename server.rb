@@ -20,12 +20,14 @@ get '/contact' do
   erb :contact
 end
 
-post '/thankyou' do
-  unless params[:name] == '' || params[:email] == '' || params[:content] == ''
+post '/contact' do
+
+  if params[:name] == '' || params[:email] == '' || params[:content] == ''
+    @content_error = "Please complete the form fields"
+    redirect '/contact?error=Please+complete+all+of+the+form+fields'
+  else
     email_message(params[:name], params[:email], params[:content])
     save_message(params[:name], params[:email], params[:content])
-  else
-    render '/thankyou'
+    redirect '/'
   end
-  redirect '/'
 end

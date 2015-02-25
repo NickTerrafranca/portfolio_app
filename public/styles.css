@@ -41,6 +41,7 @@ h1 {
   margin-bottom: 100px;
   line-height: 28px;
   font-weight: 300;
+  letter-spacing: .5px;
 }
 
 a {
@@ -78,6 +79,9 @@ a:active {
   text-align: center;
 }
 
+.error {
+  background-color: red;
+}
 form {
   margin: 0 auto;
   width: 400px;

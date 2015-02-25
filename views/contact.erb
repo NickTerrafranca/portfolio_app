@@ -7,7 +7,8 @@
 
 
 <div class="form_container text-area main-body">
-  <form action="/thankyou" method="post">
+
+  <form action="/contact" method="post">
     <h3>Send me a message</h3>
 
     <div>
@@ -21,6 +22,10 @@
     <div>
       <textarea rows="5" cols="20" type="text" id="content" name="content" placeholder="Message"></textarea>
     </div>
+
+    <% if params['error'] %>
+      <div class="error form_container "><%= params['error']%></div>
+    <% end %>
 
     <div class="button">
         <button type="submit">Send your message</button>
