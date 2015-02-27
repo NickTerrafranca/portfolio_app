@@ -23,6 +23,7 @@ post '/contact' do
     redirect '/contact?error=Please+complete+all+of+the+form+fields'
   else
     email_message(params[:name], params[:email], params[:content])
-    redirect '/'
+    # redirect '/'
+    erb :index
   end
 end
