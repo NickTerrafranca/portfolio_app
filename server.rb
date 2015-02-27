@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'pg'
 require 'pony'
 require 'dotenv'
 
@@ -24,7 +23,6 @@ post '/contact' do
     redirect '/contact?error=Please+complete+all+of+the+form+fields'
   else
     email_message(params[:name], params[:email], params[:content])
-    # save_message(params[:name], params[:email], params[:content])
     redirect '/'
   end
 end
