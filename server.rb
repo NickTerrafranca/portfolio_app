@@ -3,8 +3,6 @@ require 'pg'
 require 'pony'
 require 'dotenv'
 
-require 'pry'
-
 require_relative 'models/models'
 
 get '/' do
