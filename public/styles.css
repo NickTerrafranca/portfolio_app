@@ -17,7 +17,9 @@ header {
 .banner {
   padding-top: 50px;
   padding-bottom: 50px;
-  background: #009BDF;
+  /*background: #009BDF;*/
+  background: #0792EB;
+  /*background: #0094FF;*/
   color: white;
 }
 
@@ -49,7 +51,7 @@ ul {
 }
 
 a {
-  color: #0086CF;
+  color: #009BDF;
   text-decoration: none;
 }
 
