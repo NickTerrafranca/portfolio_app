@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
   <title>Nick Terrafranca</title>
@@ -12,15 +13,11 @@
 <body>
   <header>
     <div id="nav">
-      <span id="nav-bar-left">
-        <a href="<%= "/" %>"><%= "Nicholas Terrafranca" %></a>
-        <a href="<%= "/contact" %>"><%= "Contact" %></a>
-        <a href="<%= "/tools" %>"><%= "Tools" %></a>
-      </span>
-      <span id="nav-bar-right">
-        <a href="https://www.linkedin.com/in/nterrafranca" target="_blank">LinkedIn</a>
-        <a href="https://github.com/NickTerrafranca" target="_blank">GitHub</a>
-      </span>
+      <div class="nav-bar-left"><a href="<%= "/" %>"><%= "Nicholas Terrafranca" %></a></div>
+      <div class="nav-bar-left"><a href="<%= "/contact" %>"><%= "Contact" %></a></div>
+      <div class="nav-bar-left"><a href="<%= "/tools" %>"><%= "Tools" %></a></div>
+      <div class="nav-bar-right"><a href="https://www.linkedin.com/in/nterrafranca" target="_blank">LinkedIn</a></div>
+      <div class="nav-bar-right"><a href="https://github.com/NickTerrafranca" target="_blank">GitHub</a></div>
     </div>
   </header>
     <%= yield %>

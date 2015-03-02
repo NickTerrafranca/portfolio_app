@@ -5,7 +5,29 @@ html, body {
 }
 
 header {
-  padding: 15px 0px 15px 100px;
+  height: 40px;
+  padding: 10px;
+}
+
+#nav {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#nav * {
+  margin: 10px;
+}
+
+header .nav-bar-left{
+  float: left;
+  width: auto;
+  height: auto;
+}
+
+header .nav-bar-right {
+  float: right;
+  width: auto;
+  height: auto;
 }
 
 .text-area {
@@ -17,9 +39,7 @@ header {
 .banner {
   padding-top: 50px;
   padding-bottom: 50px;
-  /*background: #009BDF;*/
   background: #0792EB;
-  /*background: #0094FF;*/
   color: white;
 }
 
@@ -66,19 +86,6 @@ a:hover {
 a:active {
     color: black;
     font-weight: bold;
-}
-
-#nav-bar-right {
-    position: absolute;
-    right: 100px;
-}
-
-#nav-bar-right * {
-  margin: 10px;
-}
-
-#nav-bar-left * {
-  margin: 10px;
 }
 
 .form_container {
@@ -130,6 +137,7 @@ textarea {
   text-align: center;
 
 }
+
 button {
   background: #009BDF;
   border-color: #009BDF;
@@ -138,6 +146,7 @@ button {
   border-radius: 11px;
   color: white;
 }
+
 button:hover {
   background: #19B9FF;
 }
