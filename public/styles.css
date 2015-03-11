@@ -5,7 +5,7 @@ html, body {
 }
 
 header {
-  height: 40px;
+  height: 20px;
   padding: 10px;
 }
 
@@ -15,7 +15,7 @@ header {
 }
 
 #nav * {
-  margin: 10px;
+  margin: 0px 10px 0px 10px;
 }
 
 header .nav-bar-left{
@@ -77,6 +77,7 @@ ul {
 a {
   color: #009BDF;
   text-decoration: none;
+  display: inline-block;
 }
 
 a:visited {

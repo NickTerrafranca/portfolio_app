@@ -13,11 +13,13 @@
   <body>
     <header>
       <div id="nav">
-        <div class="nav-bar-left"><a href="<%= "/" %>"><%= "Nicholas Terrafranca" %></a></div>
-        <div class="nav-bar-left"><a href="<%= "/contact" %>"><%= "Contact" %></a></div>
-        <div class="nav-bar-left"><a href="<%= "/tools" %>"><%= "Tools" %></a></div>
-        <div class="nav-bar-right"><a href="https://www.linkedin.com/in/nterrafranca" target="_blank">LinkedIn</a></div>
-        <div class="nav-bar-right"><a href="https://github.com/NickTerrafranca" target="_blank">GitHub</a></div>
+        <ul>
+          <li><div class="nav-bar-left"><a href="<%= "/" %>"><%= "Nicholas Terrafranca" %></a></div></li>
+          <li><div class="nav-bar-left"><a href="<%= "/contact" %>"><%= "Contact" %></a></div></li>
+          <li><div class="nav-bar-left"><a href="<%= "/tools" %>"><%= "Tools" %></a></div></li>
+          <li><div class="nav-bar-right"><a href="https://www.linkedin.com/in/nterrafranca" target="_blank">LinkedIn</a></div></li>
+          <li><div class="nav-bar-right"><a href="https://github.com/NickTerrafranca" target="_blank">GitHub</a></div></li>
+        </ul>
       </div>
     </header>
       <%= yield %>
