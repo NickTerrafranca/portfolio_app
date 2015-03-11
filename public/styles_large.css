@@ -10,34 +10,30 @@ header {
 }
 
 #nav {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 #nav * {
-  margin: 0px 10px 0px 10px;
+  margin: 0px 8px 0px 8px;
 }
 
 ul {
   list-style-type: none;
 }
 
-header .nav-bar-left{
+.nav-bar-left{
   float: left;
   width: auto;
   height: auto;
+  display: inline;
 }
 
-header .nav-bar-right {
+.nav-bar-right {
   float: right;
   width: auto;
   height: auto;
-}
-
-.text-area {
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
+  display: inline;
 }
 
 .banner {
@@ -45,6 +41,18 @@ header .nav-bar-right {
   padding-bottom: 50px;
   background: #0792EB;
   color: white;
+}
+
+.banner-text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.text-area {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 h1 {

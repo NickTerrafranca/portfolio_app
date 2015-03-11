@@ -1,0 +1,163 @@
+html, body {
+  margin:0;
+  padding:0;
+  font-family: 'Roboto', 'Lato', sans-serif;
+}
+
+header {
+  height: 20px;
+  padding: 10px;
+}
+
+#nav * {
+  margin: 0px 4px 0px 4px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-bar-left {
+  float: left;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.nav-bar-right {
+  float: right;
+  width: auto;
+  height: auto;
+}
+
+.banner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #0792EB;
+  color: white;
+}
+
+.banner-text {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.text-area {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+h1 {
+  font-size: 5em;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-weight: 100;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+#tag-line {
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.main-body {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  line-height: 23px;
+  font-weight: 300;
+  letter-spacing: .3px;
+}
+
+a {
+  color: #009BDF;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:visited {
+    color: #0086CF;
+}
+
+a:hover {
+    color: #FF5B00;
+}
+
+a:active {
+    color: black;
+    font-weight: bold;
+}
+
+.form_container {
+  text-align: center;
+}
+
+.error {
+  background-color: #FF0D46;
+  border-radius: 11px;
+}
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 3px solid #8A8A8A;
+  border-radius: 1em;
+  box-shadow: 5px 5px 5px #E6E6E6;
+}
+
+form div + div {
+  margin-top: 2em;
+}
+
+label {
+  display: none;
+}
+
+input, textarea {
+  display: block;
+  box-shadow: 3px 5px 5px #E6E6E6;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+input:focus, textarea:focus {
+  border-color: #000;
+}
+
+input {
+  height: 2em;
+}
+
+textarea {
+  vertical-align: top;
+  height: 10em;
+  resize: vertical;
+}
+
+.button {
+  text-align: center;
+
+}
+
+button {
+  background: #009BDF;
+  border-color: #009BDF;
+  border-width: 0px;
+  padding: 13px 26px;
+  border-radius: 11px;
+  color: white;
+}
+
+button:hover {
+  background: #19B9FF;
+}

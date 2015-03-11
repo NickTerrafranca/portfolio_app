@@ -3,22 +3,32 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- is this needed? -->
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <!-- <link rel="stylesheet" href="/styles-large.css" /> -->
+
+  <link rel='stylesheet' media='screen and (max-width: 600px)' href='/styles_small.css' />
+
+  <link rel='stylesheet' media='screen and (min-width: 601px) and (max-width: 800px)' href='/styles_medium.css' />
+
+  <link rel='stylesheet' media='screen and (min-width: 801px)' href='/styles_large.css' />
+
+  <link rel="stylesheet" href="/grid.css" />
   <link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
-  <title>Nicholas Terrafranca - Rails Developer</title>
-  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
-  <link rel="stylesheet" href="/styles.css" />
-  <link rel="stylesheet" href="/grid.css" />
+  <title>
+    Nicholas Terrafranca - Rails Developer
+  </title>
 </head>
   <body>
     <header>
       <div id="nav">
         <ul>
-          <li><div class="nav-bar-left"><a href="<%= "/" %>"><%= "Nicholas Terrafranca" %></a></div></li>
-          <li><div class="nav-bar-left"><a href="<%= "/contact" %>"><%= "Contact" %></a></div></li>
-          <li><div class="nav-bar-left"><a href="<%= "/tools" %>"><%= "Tools" %></a></div></li>
-          <li><div class="nav-bar-right"><a href="https://www.linkedin.com/in/nterrafranca" target="_blank">LinkedIn</a></div></li>
-          <li><div class="nav-bar-right"><a href="https://github.com/NickTerrafranca" target="_blank">GitHub</a></div></li>
+          <li class="nav-bar-left"><div><a href="<%= "/" %>"><%= "Nicholas Terrafranca" %></a></div></li>
+          <li class="nav-bar-left"><div><a href="<%= "/contact" %>"><%= "Contact" %></a></div></li>
+          <li class="nav-bar-left"><div><a href="<%= "/tools" %>"><%= "Tools" %></a></div></li>
+          <li class="nav-bar-right"><div><a href="https://www.linkedin.com/in/nterrafranca" target="_blank">LinkedIn</a></div></li>
+          <li class="nav-bar-right"><div><a href="https://github.com/NickTerrafranca" target="_blank">GitHub</a></div></li>
         </ul>
       </div>
     </header>
