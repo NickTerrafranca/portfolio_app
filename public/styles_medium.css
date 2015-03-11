@@ -81,16 +81,16 @@ a {
 }
 
 a:visited {
-    color: #0086CF;
+  color: #0086CF;
 }
 
 a:hover {
-    color: #FF5B00;
+  color: #FF5B00;
 }
 
 a:active {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 .form_container {
