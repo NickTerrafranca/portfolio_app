@@ -44,10 +44,9 @@ header .nav-bar-right {
 }
 
 h1 {
+  font-size: 5em;
   font-family: 'Lato', sans-serif;
   text-align: center;
-  font-size: 80px;
-  line-height: 100px;
   font-weight: 100;
 }
 
