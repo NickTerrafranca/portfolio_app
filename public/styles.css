@@ -18,6 +18,10 @@ header {
   margin: 0px 10px 0px 10px;
 }
 
+ul {
+  list-style-type: none;
+}
+
 header .nav-bar-left{
   float: left;
   width: auto;
@@ -67,10 +71,6 @@ h3 {
   line-height: 28px;
   font-weight: 300;
   letter-spacing: .5px;
-}
-
-ul {
-  list-style-type: none;
 }
 
 a {
