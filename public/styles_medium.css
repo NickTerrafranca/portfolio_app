@@ -78,7 +78,8 @@ h3 {
 a {
   color: #009BDF;
   text-decoration: none;
-  display: inline-block;
+  /*display: inline-block;*/
+  font-size: 1em;
 }
 
 a:visited {
