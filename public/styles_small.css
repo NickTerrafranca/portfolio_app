@@ -56,7 +56,6 @@ h1 {
 }
 
 h3 {
-
   font-weight: 300;
 }
 
@@ -78,6 +77,11 @@ h3 {
 
 .mobile-text {
 text-align: justify;
+}
+
+.mobile-text li {
+text-align: left;
+
 }
 
 a {
