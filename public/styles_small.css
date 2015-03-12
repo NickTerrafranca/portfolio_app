@@ -17,6 +17,8 @@ header {
 
 ul {
   list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 .nav-bar-left {
@@ -76,12 +78,7 @@ h3 {
 }
 
 .mobile-text {
-text-align: justify;
-}
-
-.mobile-text li {
-text-align: left;
-
+  text-align: justify;
 }
 
 a {
@@ -155,7 +152,6 @@ textarea {
 
 .button {
   text-align: center;
-
 }
 
 button {
