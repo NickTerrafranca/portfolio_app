@@ -6,7 +6,7 @@ html, body {
 
 header {
   height: 30px;
-  padding: 2px;
+  padding: 5px;
 }
 
 #nav * {
@@ -20,7 +20,6 @@ ul {
 
 .nav-bar-left {
   float: left;
-
 }
 
 .nav-bar-right {
@@ -30,7 +29,7 @@ ul {
 .banner {
   margin-top: -10px;
   padding-bottom: 1px;
-  padding-top: 10px;
+  padding-top: 20px;
   background: #0792EB;
   color: white;
 }
@@ -49,7 +48,7 @@ ul {
 
 h1 {
   margin: 0;
-  font-size: 3em;
+  font-size: 40px;
   font-family: 'Lato', sans-serif;
   text-align: center;
   font-weight: 300;
@@ -61,14 +60,14 @@ h3 {
 }
 
 #tag-line {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 300;
   text-align: center;
   letter-spacing: 3px;
 }
 
 .main-body {
-  font-size: 13px;
+  font-size: 17px;
   margin-top: 20px;
   margin-bottom: 100px;
   line-height: 23px;
