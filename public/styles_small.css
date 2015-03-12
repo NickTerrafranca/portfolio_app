@@ -85,7 +85,7 @@ h3 {
 a {
   color: #009BDF;
   text-decoration: none;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 a:visited {
