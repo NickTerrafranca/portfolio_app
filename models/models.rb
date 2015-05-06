@@ -2,8 +2,8 @@ Dotenv.load
 
 def email_message(name, email, content)
   Pony.options = {
-    :subject => "Portfolio page: Message delivery from #{params[:name]}",
-    :body => "From: #{params[:name]} #{params[:email]}\n#{params[:content]}",
+    :subject => "Portfolio page: Message delivery from #{params[:name].}",
+    :body => "From: #{params[:name]} #{params[:email]}\n#{params[:content].}",
     :via => :smtp,
     :via_options => {
       :address              => ENV["SMTP_ADDRESS"],
