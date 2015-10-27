@@ -7,7 +7,7 @@ def email_message(name, email, content)
     :via => :smtp,
     :via_options => {
       :address              => ENV["SMTP_ADDRESS"],
-      :port                 =>  '587',
+      :port                 => ENV["PORT"],
       :enable_starttls_auto => true,
       :user_name            => ENV["USER_EMAIL_ADDRESS"],
       :password             => ENV["SMTP_PASSWORD"],
