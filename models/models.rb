@@ -15,5 +15,6 @@ def email_message(name, email, content)
       :domain               => ENV["DOMAIN"]
     }
   }
+
   Pony.mail(:to => ENV["DESTINATION_EMAIL_ADDRESS"])
 end
