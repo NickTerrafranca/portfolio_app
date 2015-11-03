@@ -9,12 +9,11 @@ def email_message(name, email, content)
       :address              => ENV["SMTP_ADDRESS"],
       :port                 => ENV["PORT"],
       :enable_starttls_auto => true,
-      :user_name            => ENV["USER_EMAIL_ADDRESS"],
-      :password             => ENV["SMTP_PASSWORD"],
-      :authentication       => :login,
+      :user_name            => ENV['SENDGRID_USERNAME'],
+      :password             => ENV['SENDGRID_PASSWORD'],
+      :authentication       => :plain,
       :domain               => ENV["DOMAIN"]
     }
   }
-
   Pony.mail(:to => ENV["DESTINATION_EMAIL_ADDRESS"])
 end
