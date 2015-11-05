@@ -2,10 +2,12 @@ Dotenv.load
 
 def email_message(name, email, content)
   Pony.options = {
+    :from => 'noreply@nterrafranca.com',
     :via => :smtp,
-    :subject => "Portfolio page: Message delivery from #{name}",
-    :body => "From: #{name}, #{email}\n#{content}",
+    :subject => "Message delivery from #{name}",
+    :body => "From: #{name},\n#{content}\n#{email}",
     :via_options => {
+      :host => 'smtp.nterrafranca.com',
       :address => 'smtp.sendgrid.net',
       :port => '587',
       :domain => 'heroku.com',
@@ -17,5 +19,3 @@ def email_message(name, email, content)
   }
   Pony.mail(:to => ENV["DESTINATION_EMAIL_ADDRESS"])
 end
-
-
